@@ -22,3 +22,4 @@ i/ *   O   O   * \i
 | day | title | p1 | p2 |
 | --- | --- | --- | --- |
 | 1   | Trebuchet?!             | [1️⃣](day-01/1.litcoffee) | [2️⃣](day-01/2.litcoffee) |
+| 2   | Cube Conundrum          | [1️⃣](day-02/1.litcoffee) | [2️⃣](day-02/2.litcoffee) |
