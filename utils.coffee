@@ -4,7 +4,11 @@ assert  = require 'assert'
 
 getInput = (file='./input')-> readFileSync file, encoding: 'utf8'
 
-sum = -> [arguments...].reduce (memo, val)-> memo + val
+sum = -> [arguments...].reduce ((memo, val)-> memo + val), 0
+
+multiply = -> [arguments...].reduce (memo, val)-> memo * val
+
+uniq = -> [...new Set arguments...]
 
 inputLines = (text='')->
   text
@@ -17,4 +21,6 @@ module.exports = {
   getInput
   inputLines
   sum
+  uniq
+  multiply
 }
