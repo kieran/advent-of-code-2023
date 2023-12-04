@@ -43,20 +43,18 @@ What is the sum of all of the gear ratios in your engine schematic?
 
     ratios = (map=[[]])->
       ret = []
-      for numbers in parts(map) when numbers.length is 2
-        ret.push multiply numbers...
+      for gears in parts(map) when gears.length is 2
+        ret.push multiply gears...
       ret
 
     parts = (map=[[]])->
       ret = []
       for row, y in map
-        for val, x in row
-          if val is '*'
-            if part = findNumbers map, y, x
-              ret.push part
+        for val, x in row when val is '*'
+          ret.push part if part = gears map, y, x
       ret
 
-    findNumbers = (map=[[]], y=0, x=0)->
+    gears = (map=[[]], y=0, x=0)->
       ret = []
       # only check the corners
       for dy in [-1, 0, 1]
@@ -102,7 +100,7 @@ What is the sum of all of the gear ratios in your engine schematic?
     assert  = require "node:assert"
     { isEqual } = require "underscore"
 
-    describe "parsing", ->
+    describe "gears", ->
 
       it "finds diagonals" , ->
         assert.equal 4, sum ...ratios map \
@@ -142,7 +140,7 @@ What is the sum of all of the gear ratios in your engine schematic?
         .*2
         3..
         """
-        #  ex
+
         assert.equal 0, sum ...ratios map \
         """
         .1.
