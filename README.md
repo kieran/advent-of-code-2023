@@ -23,4 +23,5 @@ i/ *   O   O   * \i
 | --- | --- | --- | --- |
 | 1   | Trebuchet?!             | [1️⃣](day-01/1.litcoffee) | [2️⃣](day-01/2.litcoffee) |
 | 2   | Cube Conundrum          | [1️⃣](day-02/1.litcoffee) | [2️⃣](day-02/2.litcoffee) |
-| 3   | Gear Ratios.            | [1️⃣](day-03/1.litcoffee) | [2️⃣](day-03/2.litcoffee) |
+| 3   | Gear Ratios             | [1️⃣](day-03/1.litcoffee) | [2️⃣](day-03/2.litcoffee) |
+| 4   | Scratchcards            | [1️⃣](day-04/1.litcoffee) | [2️⃣](day-04/2.litcoffee) |
